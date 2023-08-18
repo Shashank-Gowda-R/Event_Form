@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./eventForm.css">
+    <title>Add an event Details</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Event Details</h1>
+        <p>Add Complete Event Details to approve it.</p>
+        <form>
+            <div class="row">
+                <div class="column">
+                    <label for="name">Event Name</label>
+                    <input type="text" id="name" placeholder="Your name here">
+                </div>
+                <div class="column">
+                    <label for="pet-select">Select a department:</label><br>
+
+                    <select name="pets" id="pet-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="1">CSE</option>
+                        <option value="2">AIML</option>
+                        <option value="3">ISE</option>
+                        <option value="4">EC</option>
+                        <option value="5">EEE</option>
+                        <option value="6">Civil</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="date">Date</label>
+                    <input type="date" id="email" placeholder="Enter event date">
+                </div>
+                <div class="column">
+                    <label for="time">Time</label>
+                    <input type="time" id="subject" placeholder="Enter event time">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label for="speaker">Speakers</label>
+                    <input type="text" id="speaker" placeholder="Enter speaker of an event">
+                </div>
+                <div class="column">
+                    <label for="broucher">Broucher</label>
+                    <input type="file" id="image" placeholder="Enter event Broucher">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <label for="issue">Describe the Event</label>
+                    <textarea id="issue" placeholder="Event purpose and details" rows="3"></textarea>
+                </div>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
